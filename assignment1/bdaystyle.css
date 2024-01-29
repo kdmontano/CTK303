@@ -1,0 +1,80 @@
+
+#wrapper {
+  margin: 24px auto;
+  height: auto;
+  width: 1200px;
+  border: 5px dashed #588061;
+  padding: 24px;
+  background-color: #ffeaeb;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+body {
+    background-image: url(confetti.jpg);
+    background-size: 500px;
+    font-family: menlo;
+    color:#588061;
+  }
+  header{
+    grid-column:span 4;
+    text-align: center;
+    padding-top: 40px;
+  }
+  main{
+    grid-column: span 8;
+    border:3px dashed #588061;
+    background-color: #fed3d5;
+  }
+  main p{
+    padding: 50px;
+    font-size: 22px;
+    text-align: center;
+  }
+  p{
+    align-content: center;
+  }
+  iframe{
+    padding-top: 30px;
+    grid-column: span 6;
+    margin: 0 auto;
+  }
+  footer{
+    grid-column: span 6;
+  }
+  footer p{
+    border: 4px dotted #588061;
+    text-align: center;
+    padding: 20px;
+    font-size: 17px;
+    margin-top: 120px;
+    background-color: #fed3d5;
+  }
+  #cake{
+    position: absolute;
+    z-index: 100;
+    top: 445px;
+    margin-left: 1080px;
+    height: 160px;
+    transform: rotate(5deg);
+  }
+  #silly{
+    position: absolute;
+    z-index: 100;
+    top: 200px;
+    margin-left: 600px;
+    height: 160px;
+    transform: rotate(-5deg);
+  }
+  #cat{
+    position: absolute;
+    z-index: 100;
+    top: 40px;
+    padding-left: 1120px;
+    height: 80px;
+    
+  }
+.thumb {
+  width: 300px;
+}
