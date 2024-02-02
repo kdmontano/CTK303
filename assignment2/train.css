@@ -1,0 +1,148 @@
+#wrapper {
+    margin: 50px auto;
+    height: auto;
+    width: 1000px;
+    border: 5px dashed black;
+    padding: 24px;
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+  }
+
+#trainbox {
+    color: white;
+    font-size: 36px;
+    width: 300px;
+    height: 300px;
+    background-color: #300;
+    animation: back-ani 10s linear infinite;
+    /* apply animation "back-ani" over 15 seconds, linear, infinte loop*/
+    margin: auto;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 180px;
+    grid-column: span 12;
+  }
+  
+  @keyframes back-ani {
+    0%   {background-color:#ff0000;}
+    25% {background-color: #f5f242}
+    50% {background-color: #42f54b;}
+    75%  {background-color:#0000ff;}
+    100% {background-color:#ff0000;}
+  }
+h1{
+    text-align: center;
+}
+nav{
+    grid-column: span 3;
+    margin-left: -20px;
+    
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+
+}
+nav a{
+      font-size: 20px;
+margin-bottom: 10px;
+  color: #588061;
+  background-color: #ff0000;
+  text-decoration: none;
+  display: block;
+  width: 120px;
+  padding: 10px;
+  color: white;
+  transition: width 2.0s, border-radius 2.0s, color 2.0s;
+  /*this will transition to original position when stop hovering */
+}
+nav a:hover {
+  
+  background-color: #E7B5AC;
+  border-radius: 20px;
+  font-weight: bold;
+width: 180px;
+  animation: back-ani 10s linear infinite;
+  transition:  width 2.0s, color 2.0s, border-radius 2.0s;
+
+}
+main{
+    grid-column: span 4;
+}
+#kid{
+    grid-column: span 5;
+    width: 100%
+    
+}
+p{
+    text-align: center;
+}
+
+
+  
+ #kid {
+    transition: .1s all;
+  }
+  
+img:hover  {
+    transform: scale(1.1);
+    filter: drop-shadow(16px 16px 16px blue) invert(75%);
+    /*can use other photoshop like filers too!! */
+  }
+
+footer{
+    margin-top: 20px;
+    grid-column: span 12;
+}
+footer p{
+    border: 3px dashed black;
+display: block;
+text-align: center;
+  padding: 20px;
+  width: 300px;
+  margin-left:330px;
+  margin-bottom: 0;
+}
+#link{
+    text-decoration: none;
+    font-weight: bold;
+}
+#link:hover{
+    font-size: 18px;
+     color: #588061;
+     text-decoration: none;
+}
+
+#thomas {
+    position: absolute; /*can position ABSOLUTELY where it will appear in the window */
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius:500px;
+    opacity: .5;
+    animation: circle1-ani 10s linear infinite;
+  }
+  
+  @keyframes circle1-ani {
+    0%   { opacity: .0; left:0; }
+    50%  { opacity: 1; } /*half opacity */
+    100% { opacity: .0; left: 1000px; }
+  }
+  #tommy {
+    position: absolute; /*can position ABSOLUTELY where it will appear in the window */
+  bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius:500px;
+    opacity: .5;
+    animation: thomathen-ani 15s linear infinite;
+  }
+  @keyframes thomathen-ani {
+    0%   { opacity: .0; left:0; }
+    50%  { opacity: 1; } /*half opacity */
+    100% { opacity: .0; left: 1000px; }
+  }
