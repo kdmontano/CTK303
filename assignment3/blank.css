@@ -1,0 +1,85 @@
+body {
+text-align: center;
+margin-top: 60px;
+}
+
+svg{
+  width:400px;
+}
+svg:hover{
+  transform: scale(1.5);
+}
+
+#hat{
+  animation: hatfade 1.0s;
+}
+#backhat{
+  animation:hatfade 1.0s;
+}
+#leaf{
+  animation:hatfade 3.0s;
+}
+@keyframes hatfade {
+  0%   { transform: translate(0, -200px);}
+  100% { transform: translate(0, 0);}
+}
+
+#swirl{
+  animation: swirlfade 3.0s;
+  transform-origin: center;
+}
+
+@keyframes swirlfade {
+  0%   { transform: rotate(360deg);}
+  0% {opacity: 0}
+  100% {opacity: 1}
+  100% { transform: rotate(0deg);}
+}
+#mouth{
+animation: facefade 8.0s;
+}
+#eye1{
+  animation: facefade 8.0s;
+  }
+  #eye2{
+    animation: facefade 8.0s;
+    }
+@keyframes facefade{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+#body {
+  animation: kfade 2.0s;
+  transform-origin: bottom center;
+}
+
+@keyframes kfade {
+  0%   { transform: scale(0.1);}
+  100% { transform: scale(1.0);}
+}
+#leftarm{
+  animation: leftarm 2.0s;
+  transform-origin: left center;
+}
+@keyframes leftarm{
+  0%{transform: translate(-50%,0%);}
+  100%{transform:translate(0px, 0px);}
+}
+#rightarm{
+  animation: rightarm 2.0s;
+  transform-origin: right center;
+}
+@keyframes rightarm{
+  0%{transform: translate(50%,0%);}
+  100%{transform:translate(0px, 0px);}
+}
+#head {
+  animation: kfade 2.0s;
+  transform-origin:  center;
+}
+
+#ears {
+  animation: kfade 2.0s;
+  transform-origin:  center;
+}
+
