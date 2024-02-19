@@ -11,7 +11,7 @@ let timer = 0;
 
 
 function setup() {
-  createCanvas(1366, 768);
+  createCanvas(1000, 600);
   bg = loadImage('assets/field.png');
   for (let i = 0; i < 10; i++) {
     cars.push(new Car());
@@ -42,7 +42,7 @@ function game(){
   /*image(img2, width/2, height/2, width, height);*/
 background(61, 195, 264);
 fill(93,177,52,255);
-rect(0,600,1400, 750);
+rect(0,500,1400, 750);
    for (let i = 0 ; i < cars.length ; i++) {
      cars[i].display() ;
      cars[i].move() ;
@@ -87,7 +87,8 @@ class Car {
 
     this.pos = createVector(random(width),random(height)) ;
     this.vel = createVector(random(-7,7), random(-7,7));
-    this.r = random(255); //red color
+    this.r = random(255); //color
+    this.r2 = random(20);
     this.o = random(255);
 
   }
@@ -95,7 +96,7 @@ class Car {
   // methods - these get called with a dot after the variable
 
   display() {
-    fill(0, this.r, this.r, this.o);
+    fill(this.r2, this.r, this.r, this.o);
     circle(this.pos.x, this.pos.y, 50, 25);
   }
 
