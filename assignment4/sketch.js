@@ -1,16 +1,14 @@
 let cars = [];
 
-let img,img2;
-let bg;
+let img, img2;
+
 //array
 
 let frogPos;
 let state = 0;
 let timer = 0;
 
-function preload(){
-  bg = loadImage("assets/field.png")
-}
+
 
 function setup() {
   createCanvas(1366, 768);
@@ -32,17 +30,19 @@ function setup() {
 }
 
 function draw() {
-background(bg);
-     game();
-   
- 
-
   
+     game();
+
   
 }
 
+/*the game is supposed to have a background image of the jellyfish field from spongebob, but I couldn't get it to appear, butting the image in the background function breaks the code for some reason */
+
 function game(){
-background(255);
+  /*image(img2, width/2, height/2, width, height);*/
+background(61, 195, 264);
+fill(93,177,52,255);
+rect(0,600,1400, 750);
    for (let i = 0 ; i < cars.length ; i++) {
      cars[i].display() ;
      cars[i].move() ;

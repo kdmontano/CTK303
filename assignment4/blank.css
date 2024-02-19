@@ -1,6 +1,7 @@
 
   body{
-background-color: #3DC3F6;
+/*background-color: #3DC3F6; */
+background-image: url(bkg.jpg);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: 0;
