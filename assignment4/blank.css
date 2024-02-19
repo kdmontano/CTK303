@@ -1,0 +1,28 @@
+
+  body{
+background-color: #3DC3F6;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0;
+  margin-bottom: 0;
+ 
+}
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+margin: auto;
+  grid-column: span 12;
+}
+#sponge{
+  position: absolute;
+  z-index: 100;
+  top: 305px;
+  margin-left: 800px;
+  height: 300px;
+  transform: rotate(5deg);
+}
