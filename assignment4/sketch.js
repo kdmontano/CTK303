@@ -74,10 +74,10 @@ function resetTheGame(){
 }
 
 function checkForKeys(){
-  if (keyIsDown(RIGHT_ARROW)) frogPos.x += 5;
-    if (keyIsDown(LEFT_ARROW)) frogPos.x -= 5;
-  if (keyIsDown(UP_ARROW)) frogPos.y -= 5;
-  if (keyIsDown(DOWN_ARROW)) frogPos.y += 5;
+  if (keyIsDown(RIGHT_ARROW)) frogPos.x += 10;
+    if (keyIsDown(LEFT_ARROW)) frogPos.x -= 10;
+  if (keyIsDown(UP_ARROW)) frogPos.y -= 10;
+  if (keyIsDown(DOWN_ARROW)) frogPos.y += 10;
 
 }
 
