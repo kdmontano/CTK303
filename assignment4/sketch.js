@@ -87,7 +87,7 @@ class Car {
 
     this.pos = createVector(random(width),random(height)) ;
     this.vel = createVector(random(-7,7), random(-7,7));
-    this.r = random(255); //color
+    this.r = random(600); //color
     this.r2 = random(20);
     this.o = random(255);
 
