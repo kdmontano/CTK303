@@ -8,6 +8,9 @@ let frogPos;
 let state = 0;
 let timer = 0;
 
+function preload(){
+  bg = loadImage("assets/field.png")
+}
 
 function setup() {
   createCanvas(1366, 768);
@@ -29,7 +32,7 @@ function setup() {
 }
 
 function draw() {
-  background(bg);
+background(bg);
      game();
    
  
@@ -39,8 +42,7 @@ function draw() {
 }
 
 function game(){
-
-background(bg);
+background(255);
    for (let i = 0 ; i < cars.length ; i++) {
      cars[i].display() ;
      cars[i].move() ;
