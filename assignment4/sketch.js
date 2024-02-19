@@ -1,21 +1,25 @@
 let cars = [];
 
-let img, img2;
+let img,img2;
+let bg;
 //array
 
 let frogPos;
 let state = 0;
 let timer = 0;
 
-function setup() {
-  createCanvas(1200, 700);
 
+function setup() {
+  createCanvas(1366, 768);
+  bg = loadImage('assets/field.png');
   for (let i = 0; i < 10; i++) {
     cars.push(new Car());
   }
   //for loop, spawning cars
   //push.array.constructor/class
   
+
+
   frogPos = createVector(width/2, height-80);
   img = loadImage('assets/spongefinger.png');
   img2 = loadImage('assets/field.png');
@@ -25,7 +29,7 @@ function setup() {
 }
 
 function draw() {
-
+  background(bg);
      game();
    
  
@@ -35,9 +39,8 @@ function draw() {
 }
 
 function game(){
- 
-image(img2, width/2, height/2, width, height);
-background(255);
+
+background(bg);
    for (let i = 0 ; i < cars.length ; i++) {
      cars[i].display() ;
      cars[i].move() ;
@@ -52,7 +55,7 @@ background(255);
 
   
  
-  image(img, frogPos.x, frogPos.y, 50, 50);
+  image(img, frogPos.x, frogPos.y, 80, 80);
   checkForKeys();
   
 }

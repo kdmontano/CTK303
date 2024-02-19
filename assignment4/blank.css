@@ -8,7 +8,10 @@ background-color: #3DC3F6;
  
 }
 
-
+#bkg{
+  position: absolute;
+ width: 1200px;
+}
 
 main {
   display: flex;
