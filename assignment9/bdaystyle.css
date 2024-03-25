@@ -78,3 +78,6 @@ body {
 .thumb {
   width: 300px;
 }
+iframe{
+  border: 0px;
+}
